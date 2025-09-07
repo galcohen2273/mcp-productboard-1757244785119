@@ -19,7 +19,6 @@ mcp = FastMCP("Productboard API")
 
 
 @mcp.tool
-
 def create_note(title: str, content: str) -> dict:
     """Create a new note in Productboard."""
     try:
@@ -32,7 +31,6 @@ def create_note(title: str, content: str) -> dict:
 
 
 @mcp.tool
-
 def list_notes(limit: int = 10, offset: int = 0) -> dict:
     """Retrieve a list of all notes."""
     try:
@@ -45,7 +43,6 @@ def list_notes(limit: int = 10, offset: int = 0) -> dict:
 
 
 @mcp.tool
-
 def get_note(note_id: str) -> dict:
     """Retrieve a specific note by ID."""
     try:
@@ -57,7 +54,6 @@ def get_note(note_id: str) -> dict:
 
 
 @mcp.tool
-
 def delete_note(note_id: str) -> dict:
     """Delete a specific note by ID."""
     try:
@@ -69,7 +65,6 @@ def delete_note(note_id: str) -> dict:
 
 
 @mcp.tool
-
 def create_company(name: str, domain: str, description: str) -> dict:
     """Create a new company in Productboard."""
     try:
@@ -82,7 +77,6 @@ def create_company(name: str, domain: str, description: str) -> dict:
 
 
 @mcp.tool
-
 def list_companies(limit: int = 20, offset: int = 0) -> dict:
     """Retrieve a list of all companies."""
     try:
@@ -95,7 +89,6 @@ def list_companies(limit: int = 20, offset: int = 0) -> dict:
 
 
 @mcp.tool
-
 def create_feature(name: str, description: str) -> dict:
     """Create a new feature."""
     try:
@@ -108,7 +101,6 @@ def create_feature(name: str, description: str) -> dict:
 
 
 @mcp.tool
-
 def list_features(limit: int = 50, offset: int = 0) -> dict:
     """Retrieve a list of all features."""
     try:
@@ -121,7 +113,6 @@ def list_features(limit: int = 50, offset: int = 0) -> dict:
 
 
 @mcp.tool
-
 def create_release_group(name: str, description: str) -> dict:
     """Create a new release group."""
     try:
@@ -134,7 +125,6 @@ def create_release_group(name: str, description: str) -> dict:
 
 
 @mcp.tool
-
 def list_release_groups(limit: int = 20, offset: int = 0) -> dict:
     """Retrieve a list of all release groups."""
     try:
@@ -147,7 +137,6 @@ def list_release_groups(limit: int = 20, offset: int = 0) -> dict:
 
 
 @mcp.tool
-
 def create_webhook(url_webhook: str, eventTypes: list) -> dict:
     """Create a new webhook subscription."""
     try:
@@ -160,7 +149,6 @@ def create_webhook(url_webhook: str, eventTypes: list) -> dict:
 
 
 @mcp.tool
-
 def list_webhooks(limit: int = 10, offset: int = 0) -> dict:
     """Retrieve a list of all webhook subscriptions."""
     try:
@@ -173,7 +161,6 @@ def list_webhooks(limit: int = 10, offset: int = 0) -> dict:
 
 
 @mcp.tool
-
 def list_custom_fields(limit: int = 100, offset: int = 0) -> dict:
     """Retrieve list of all company custom fields."""
     try:
@@ -186,7 +173,6 @@ def list_custom_fields(limit: int = 100, offset: int = 0) -> dict:
 
 
 @mcp.tool
-
 def set_company_field_value(companyId: str, companyCustomFieldId: str, value) -> dict:
     """Set value of a company custom field."""
     try:
@@ -199,7 +185,6 @@ def set_company_field_value(companyId: str, companyCustomFieldId: str, value) ->
 
 
 @mcp.tool
-
 def health_check() -> dict:
     """Perform a health check on the Productboard API."""
     try:
